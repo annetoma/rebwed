@@ -92,15 +92,11 @@ h2 {
 
 
 
-section.intro, section.contact {
+section.intro, section.details {
   padding: 40px;
 }
 
-section.intro {
-  background: #EAEADD;
-}
-
-section.contact {
+section.intro, section.details, section.rsvp {
   background: #EAEADD;
 }
 
