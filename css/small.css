@@ -13,7 +13,25 @@ body {
   border-radius: 0;
 }
 
+.twins img {
+  width: 100%;
+  border-radius: 0;
+}
+
 aside.right, aside.left {
   text-align: center;
   float: inherit;
+}
+
+a.button {
+    background-color: #2AB7CA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 5px;
+    width: 200px;
+    margin: 3px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

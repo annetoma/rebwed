@@ -15,7 +15,6 @@ body{
   background-position: center;
   background-attachment: fixed;
 
-  margin: 0px;
 }
 
 * {
@@ -32,7 +31,8 @@ body{
 
 p {
   font-size: 1rem;
-  line-height: 1.75;
+  color: #464655;
+  line-height: 1.5;
   margin-bottom: 28px;
 }
 
@@ -41,11 +41,12 @@ strong {
 }
 
 ul li {
-  list-style: decimal inside;
+  color: #464655;
+  text-align: left;
 }
 
 /*
- * Heading Styles
+ * General Styles
 */
 
 
@@ -53,16 +54,46 @@ h1, h2 {
   font-family: 'Lobster', cursive;
   color: #F4442E;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 h1 {
-
   font-size: 3rem;
+  margin-bottom: -30px;
 }
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+a:link {
+    color: #17BEBB;
+    text-decoration: none;
+
+
+}
+a:visited {
+        text-decoration: none;
+color: #17BEBB;
+
+}
+a:hover {
+text-decoration: underline;
+color: #DD127B;
+
+}
+
+a.button {
+    background-color: #2AB7CA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 5px;
+    width: 100px;
+    margin: 3px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /*
@@ -92,14 +123,12 @@ h2 {
  * Section Styles
 */
 
-
-
-section.intro, section.details {
+section.intro, section.rsvp, section.booze, section.lodging {
   padding: 40px;
 }
 
-section.intro, section.details, section.rsvp {
-  background: #EAEADD;
+section.intro, section.rsvp, section.booze, section.lodging {
+  background: #F5E5FC;
 }
 
 /*
