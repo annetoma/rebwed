@@ -1,0 +1,38 @@
+version: '2'
+services:
+    postgres:
+        image: postgres:9.6
+        ports:
+            - "5433:5433"
+        environment:
+            - POSTGRES_USER=rebwed
+            - POSTGRES_PASSWORD=rebwed
+            - POSTGRES_DB=rebwed
+
+    memcached:
+        image: memcached
+        ports:
+            - "11212:11212"
+
+    rebwed:
+        build: .
+        ports:
+            - "5111:5111"
+        links:
+            - memcached
+            - postgres
+        environment:
+            - DB_NAME=rebwed
+            - DB_USER=rebwed
+            - DB_PASSWORD=rebwed
+            - DB_HOST=postgres
+            - DB_PORT=5432
+            - RAILS_ENV=development
+            - MEMCACHE_SERVERS=memcached
+        volumes:
+            - .:/app
+        env_file:
+            - .env
+        depends_on:
+            - memcached
+            - postgres
