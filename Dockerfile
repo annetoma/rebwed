@@ -17,7 +17,7 @@ RUN mkdir /app
 RUN mkdir /data
 
 COPY Gemfile* /app/
-COPY package.json yarn.lock /app/
+#COPY package.json yarn.lock /app/
 
 WORKDIR /app
 RUN npm install -g yarn \
