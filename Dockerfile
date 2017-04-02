@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     make \
     nodejs \
+    npm \
     libpq-dev \
     tar \
     vim
@@ -15,10 +16,12 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /app
 RUN mkdir /data
 
-ADD Gemfile* /app/
+COPY Gemfile* /app/
+COPY package.json yarn.lock /app/
 
 WORKDIR /app
-RUN gem install bundler foreman \
+RUN npm install -g yarn \
+    && gem install bundler foreman \
     && bundle config git.allow_insecure true \
     && bundle config build.nokogiri --use-system-libraries \
     && bundle install --jobs 4 --retry 5
