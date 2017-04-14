@@ -17,11 +17,9 @@ RUN mkdir /app
 RUN mkdir /data
 
 COPY Gemfile* /app/
-#COPY package.json yarn.lock /app/
 
 WORKDIR /app
-RUN npm install -g yarn \
-    && gem install bundler foreman \
+RUN gem install bundler foreman \
     && bundle config git.allow_insecure true \
     && bundle config build.nokogiri --use-system-libraries \
     && bundle install --jobs 4 --retry 5

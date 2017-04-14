@@ -4,65 +4,116 @@
     <title>Ian & Anne's Pizza Party</title>
     <meta name="description" content="Ian & Anne's Pizza Party!">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700|Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+
     <div class="container">
 
-      <section class="twins">
-        <img src="<%= asset_path("twins.jpg") %>" alt="twins">
-      </section><!-- #twins -->
+      <div class="picture">
+        <div>
+          <img style="width: 100%" src="<%= asset_path("ianne.jpg") %>" alt="ianne">
+        </div>
 
-      <section class="intro">
-         <h1>Pizza Dance Party!</h1>
-         <h2>September 30th, 2017</h2>
+        <div>
+          <img style="width: 100%" src="<%= asset_path("twins.jpeg") %>" alt="twins">
+        </div>
 
-        <!-- <aside class="right">
-          <img src="images/wine-bottle.png" alt="wine bottle">
-        </aside> -->
+        <div>
+          <img style="width: 100%" src="<%= asset_path("voltaire.jpg") %>" alt="voltaire">
+        </div>
 
-         <p>Ian and Anne got hitched last year! We want to celebrate with YOU!</p>
-         <p>Join us for a pizza dance party starting at 6:30pm at <a href="https://www.google.com/maps/place/230+Bogart+St,+Brooklyn,+NY+11206/@40.7116674,-73.9376569,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25eab2ede40bb:0x2b152bd7465088f1!8m2!3d40.7116634!4d-73.9354629" target="_blank">230 Bogart St, Brooklyn, NY 11206</a> on Saturday, September 30th and for doughnuts and coffee at 11:00am <a href="https://www.google.com/maps/place/Msgr.+McGolrick+Park/@40.7244435,-73.9433581,15z/data=!4m5!3m4!1s0x0:0x502c61b7a733459e!8m2!3d40.7244435!4d-73.9433581?sa=X&ved=0ahUKEwidiarxzoPTAhWJ8oMKHdTrCK8Q_BIIeTAO" target="_blank">McGolrick Park</a> on Sunday, October 1st.</p>
+        <div>
+          <img style="width: 100%" src="<%= asset_path("dorothytoto.jpg") %>" alt="dorothytoto">
+        </div>
+      </div>
 
-         <p>You might be wondering about that photo of Danny and Arnold at the top of the page. We would love it if you came dressed up as your favorite epic duo.</p>
+      <div class="content">
+        <section class="intro">
+           <h1>Anne & Ian's</h1>
+           <h2>Halloween Wedding Pizza Dance Party!</h2>
 
-         <a class="button" href="#RSVP">RSVP</a>
-         <a class="button" href="#booze">REGISTRY</a>
-         <a class="button" href="#lodging">LODGING</a>
-         <a class="button" href="#story">CEREMONY</a>
+           <a class="button" href="#events">PARTY</a>
+           <a class="button" href="#RSVP">RSVP</a>
+           <a class="button" href="#story">STORY</a>
+           <a class="button" href="#lodging">LODGING</a>
+        </section><!-- #intro -->
 
-      </section><!-- #intro -->
+        <section class="story">
+          <a id="story">
+           <h2>The story goes...</h2>
 
-      <section class="rsvp">
-        <a id="RSVP">
+           <p>Once upon a time, there was this company called Knewton. They needed a video guy to make online courses or something.
+           They hired this joker named Ian and Ian created this really good GMAT course. Anne, a retired banker,
+           confused about her purpose in life decided to apply to business school and took Knewton's GMAT course that Ian made.
+           Obviously she did really well.</p>
+           <p> After she graduated she moved to the big apple
+           in search of her dream job, which turned out to be an Adaptive Instruction Analyst at Knewton. Ian still happened
+           to be at Knewton when Anne joined and he admired her from afar, knowing that a babe like Anne would never be interested
+           in a turd like him.</p>
+           <p> Fast forward a year or so and Ian has left Knewton. Anne is desperate for love and turns to technology to help.
+           One nigh, in a drunken stupor, Anne swipes right on a picture of some rando dude, not knowing that it's the ogre, Ian
+         who had been admiring her from afar.</p>
+         <p> They end up dating and then they go on this amazing trip to all kinds of places like Tokyo, Ho Chi Minh and Falls Church, Virginia.
+           And then one day Anne proposes.</p>
+        </section><!-- #story -->
 
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdToTqrxCM3vdsDMfn8KojwhRkwBddejF5LrlICBv3LM_Lhcw/viewform?embedded=true#start=embed" width=100% height="1500" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" font-family="Open-Sans"></iframe>
+        <section class="events">
+          <a id="events">
+           <h2>Wait...so now what?</h2>
 
+           <p>So we did the whole ceremony, white dress, golden tux thing and we don't really want to have a fancy sit-down reception, so instead we are throwing a HALLOWEEN-THEMED PIZZA DANCE PARTY.</p>
 
-      </section><!-- #rsvp -->
+           <h3>When?</h3>
+            <p>6:30pm on Saturday, November 5th, 2017</p>
 
-      <section class="booze">
-        <a id="booze">
-        <p>No gifts please. Instead, we'd love it if you could bring a bottle of your favorite booze or beverage.</p>
-        <iframe width=100% height="371" seamless frameborder="0" scrolling="no" marginheight="0" marginwidth="0"src="https://docs.google.com/spreadsheets/d/11EXDRT-e_wpffeZcoWa64ad-9ODMfdz31NlvncKhVnc/pubchart?oid=2382589&amp;format=interactive"></iframe>
+            <h2>Where?</h2>
+            <p><a href="https://www.google.com/maps/place/230+Bogart+St,+Brooklyn,+NY+11206/@40.7116674,-73.9376569,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25eab2ede40bb:0x2b152bd7465088f1!8m2!3d40.7116634!4d-73.9354629" target="_blank">230 Bogart St, Brooklyn, NY 11206</a></p>
 
-      </section><!-- #booze -->
+            <h2>What should I wear?</h2>
+            <p>This part is very important so read carefully.</p>
 
-      <section class="lodging">
-        <a id="lodging">
-        <p>If you are coming from out of town, here are some nice places to stay:</p>
-        <ul>
-          <li><a href="http://www.henrynormanhotel.com/" target="_blank">Henry Norman Hotel</a></li>
-          <li><a href="http://wythehotel.com/" target="_blank">Wythe Hotel</a></li>
-          <li><a href="http://www.franklinguesthouse.com/" target="_blank">Franklin Guesthouse</a></li>
-          <li><a href="https://www.airbnb.com/s/Greenpoint--Brooklyn--NY--United-States?guests=2&adults=2&children=0&infants=0&checkin=09%2F29%2F2017&checkout=10%2F01%2F2017&ss_id=piqdzc0a&ss_preload=true&source=bb&page=1&s_tag=Xtw7i7cv&allow_override%5B%5D=" target="_blank">Airbnb</a></li>
-        </ul>
-      </section><!-- #lodging -->
+            <h2>Anything else?</h2>
+            <p>Join us for coffee and doughnuts with us in <a href="https://www.google.com/maps/place/Msgr.+McGolrick+Park/@40.7244435,-73.9433581,15z/data=!4m5!3m4!1s0x0:0x502c61b7a733459e!8m2!3d40.7244435!4d-73.9433581?sa=X&ved=0ahUKEwidiarxzoPTAhWJ8oMKHdTrCK8Q_BIIeTAO" target="_blank">McGolrick Park</a> on Sunday, November 6th (NYC Marathon Day) at 11:00am</p>
+        </section><!-- #events -->
 
-      <!-- <section class="footer">
-        <img src="images/cityhall.jpg" alt"city hall">
-      </section><!-- #footer --> -->
+        <section class="rsvp">
+          <a id="RSVP">
 
-    </div>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdToTqrxCM3vdsDMfn8KojwhRkwBddejF5LrlICBv3LM_Lhcw/viewform?embedded=true#start=embed" width=100% height="1500" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" font-family="Open-Sans"></iframe>
+        </section><!-- #rsvp -->
+
+        <section class="lodging">
+          <a id="lodging">
+          <p>If you are coming from out of town, here are some nice places to stay:</p>
+          <ul>
+            <li><a href="http://www.henrynormanhotel.com/" target="_blank">Henry Norman Hotel</a></li>
+            <li><a href="http://wythehotel.com/" target="_blank">Wythe Hotel</a></li>
+            <li><a href="http://www.franklinguesthouse.com/" target="_blank">Franklin Guesthouse</a></li>
+            <li><a href="https://www.airbnb.com/s/Greenpoint--Brooklyn--NY--United-States?guests=2&adults=2&children=0&infants=0&checkin=09%2F29%2F2017&checkout=10%2F01%2F2017&ss_id=piqdzc0a&ss_preload=true&source=bb&page=1&s_tag=Xtw7i7cv&allow_override%5B%5D=" target="_blank">Airbnb</a></li>
+          </ul>
+        </section><!-- #lodging -->
+      </div><!-- #content -->
+
+      <div class="clear"></div>
+
+    </div><!-- #container -->
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.picture').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          fade: true,
+          autoplaySpeed: 3000,
+          dots: false,
+          arrows: false
+        });
+      });
+    </script>
+
   </body>
 </html>

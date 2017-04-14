@@ -10,7 +10,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.20.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -20,6 +20,14 @@ gem 'puma', '~> 3.7'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+# Use jquery-rails for jquery stuff
+gem 'jquery-rails'
+# See https://github.com/rails/jquery-rails
+
+# Use jquery-ui-rails for jquery stuff
+gem 'jquery-ui-rails'
+# See https://github.com/jquery-ui-rails/jquery-ui-rails
 
 # Use CoffeeScript for .coffee assets and views
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0px;
 }
 
@@ -8,23 +8,8 @@ body {
   padding: 0;
 }
 
-.twins img {
-  width: 100%;
-  border-radius: 0;
-}
-
-.twins img {
-  width: 100%;
-  border-radius: 0;
-}
-
-aside.right, aside.left {
-  text-align: center;
-  float: inherit;
-}
-
 a.button {
-    background-color: #2AB7CA; /* Green */
+    background-color: #2AB7CA; /* Blue */
     border: none;
     color: white;
     padding: 15px 5px;
@@ -34,4 +19,4 @@ a.button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
+}*/
